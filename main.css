@@ -1,0 +1,64 @@
+@import url(standard.css);
+
+:root{
+    --dark: rgb(36, 36, 36);
+}
+
+.test::after{
+    content: "";
+    width: 100%;
+    height: .25em;
+    position: absolute;
+    top: 50%;
+    left: -.75em;
+    box-shadow:  0 1em 0 black;
+}
+
+p.test{
+    position: relative;
+}
+
+body > h1{
+    text-align: center;
+}
+
+.font{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.color{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    max-width: 800px;
+    border: solid var(--dark )5px;
+}
+
+.color div{
+    height: 100px;
+}
+.color .primary{
+    background-color: aqua;
+}
+.color .secondary{
+    background-color: red;
+}
+.color .extended{
+    background-color: hotpink;
+}
+.color .dark{
+    background-color: green;
+    
+}
+.color .light{
+    background-color: purple;
+    
+}
+
+section{
+    position: relative;
+    padding: 1em;
+}
